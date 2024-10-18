@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    background: url(../images/Gradient.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: 100px;
+}
+
+.header-logo img {
+    width: 150px;
+}
+
+.download-btn a {
+    text-decoration: none;
+    background-color: #9368E9;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #F1F1F4 !important;
+    font-size: 16px;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: #9368E9 !important;
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+.header-downlaod-btn{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.hero-section{
+    margin-bottom: 80px;
+}
+
+.groom-text,
+.hero-section .heading{
+    color: #222222;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.hero-section .paragraph{
+    color: #565656;
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: normal;
+}
+
+.hero-section .btn-gradient {
+    background: linear-gradient(45deg, #4528DC, #8731E8); /* You can change the colors */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.hero-section .btn-gradient:hover {
+    background: linear-gradient(50deg, #4528DC, #8731E8); 
+    color: #fff;
+}
+
+.font-size-32px{
+    line-height: normal;
+    font-size: 26px;
+    color: #000;
+    font-weight: 400;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #666;
+}
+
+.bg-F6F9FE{
+    background-color: #F6F9FE;
+}
+.provider-section {
+    padding: 50px 0;
+}
+
+.provider-section .provider-content {
+    margin-top: 20px;
+}
+
+.provider-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.provider-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.provider-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.provider-section ul li:before {
+    content: "\2713";
+    color: #7C4FE0;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.download-btn{
+    display: block;
+}
+
+.download-btn.nav{
+    display: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+@media (max-width:1200px) {
+    
+    .hero-seciton-img img{
+        width: 100%;
+    }
+
+    .header-downlaod-btn{
+        gap: 110px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .navbar-nav {
+        gap: 0px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #9368E9 !important;
+    }
+    .download-btn {
+        margin-top: 10px;
+    }
+
+    .header-downlaod-btn{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .download-btn{
+        display: none;
+    }
+
+    .download-btn.nav{
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-btn {
+        margin-top: 10px;
+    }
+
+    .provider-section h2,
+    .font-size-32px,
+    .groom-text, .hero-section .heading{
+        font-size: 22px;
+    }
+
+    .provider-section ul li,
+    .hero-section .paragraph{
+        font-size: 14px;
+    }
+
+    .hero-section{
+        margin-bottom: 20px;
+    }
+
+    .font-size-32px{
+        padding: 0px 10px;
+    }
+    
+}
